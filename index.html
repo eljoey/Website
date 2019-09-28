@@ -40,10 +40,16 @@
       </section>
       <section id="contact">
         <div class="contactContainer">
-          <form name="contact" action="POST" data-netlify="true">
-            <input type="text" name="first_name" placeholder="NAME" required />
-            <input type="email" name="email" placeholder="MAIL" required />
-            <textarea name="message" placeholder="MESSAGE" required></textarea>
+          <form
+            name="contact"
+            action="POST"
+            data-netlify-recaptcha="true"
+            data-netlify="true"
+          >
+            <input type="text" name="first_name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" placeholder="Message" required></textarea>
+            <div data-netlify-recaptcha="true"></div>
             <button name="send" type="submit" class="submit">
               SEND MESSAGE
             </button>
