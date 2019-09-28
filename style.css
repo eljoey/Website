@@ -147,3 +147,7 @@ section#home {
 #contact .contactContainer form .required {
   color: #b43838;
 }
+
+.captcha {
+  width: 100%;
+}
