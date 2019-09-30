@@ -76,6 +76,45 @@ section#home {
     cover;
 }
 
+/* Projects */
+
+.projectContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: repeat(2, 1fr);
+}
+
+.calcProj {
+  background: url('./images/Calculator-static.png');
+}
+
+.calcProj:hover {
+  background: url('./images/Calculator-Project.gif');
+}
+
+.weatherProj {
+  background: url('./images/Weather-static.png');
+}
+
+.weatherProj:hover {
+  background: url('./images/Weather-Project.gif');
+}
+
+.calcProj,
+.weatherProj {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 300px;
+  height: 300px;
+}
+.calcProj:hover,
+.weatherProj:hover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 /* Contact Form */
 #contact {
   width: 100%;
