@@ -136,6 +136,9 @@ section#home {
 }
 
 .flip-card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #333;
   color: white;
   transform: rotateY(180deg);
@@ -145,7 +148,32 @@ section#home {
   font-size: 1rem;
 }
 
-/* Contact Form */
+.projButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fullstackButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo,
+.code {
+  border: 1px solid orangered;
+  background: orangered;
+  border-radius: 15px;
+  padding: 0 1rem;
+  margin-right: 5px;
+}
+.projButtons a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*********** Contact Form ***********/
+
 #contact {
   width: 100%;
   height: 100%;
