@@ -16,16 +16,15 @@
       <nav class="navbar">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="./assets/resume.pdf">Resume</a></li>
+          <li><a href="./assets/resume.pdf" target="_blank">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <section id="home">
         <h1>Welcome</h1>
         <p>
-          My name is Joe Hayden and blah blah blah blah
+          My name is Joe Hayden and I am an aspiring web developer
         </p>
         <div class="socials">
           <a
@@ -38,13 +37,6 @@
             <i class="fab fa-github fa-2x"></i>
           </a>
         </div>
-      </section>
-      <section id="about">
-        <h1>About Me</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni debitis
-          nisi assumenda fuga, ullam cupiditate?
-        </p>
       </section>
       <section id="projects">
         <h1>Projects</h1>
@@ -312,6 +304,7 @@
       </section>
       <section id="contact">
         <div class="contactContainer">
+          <h1>Message Me</h1>
           <form
             name="contact"
             action="POST"
@@ -324,6 +317,7 @@
               placeholder="Don't fill this out if you're human"
             />
             <input type="text" name="first_name" placeholder="Name" required />
+            <input type="text" name="company" placeholder="Company" required />
             <input type="email" name="email" placeholder="Email" required />
             <textarea name="message" placeholder="Message" required></textarea>
             <button name="send" type="submit" class="submit">
@@ -332,6 +326,7 @@
           </form>
         </div>
       </section>
+      <footer>© Joe Hayden 2019</footer>
     </div>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="app.js"></script>

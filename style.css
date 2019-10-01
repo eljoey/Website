@@ -121,7 +121,7 @@ section#home {
   color: orangered;
 }
 
-/* Projects */
+/********** Projects **********/
 
 #projects h1 {
   margin-bottom: 5px;
@@ -290,10 +290,16 @@ section#home {
   color: #b43838;
 }
 
-.captcha {
-  width: 100%;
-}
-
 .hidden {
   display: none;
+}
+
+/********** Footer **********/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid white;
+  text-align: center;
+  height: 45px;
 }
