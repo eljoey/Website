@@ -4,8 +4,16 @@ const scroll = new SmoothScroll('.navbar a[href*="#"]', {
 
 const hamburger = document.querySelector('.hamburger')
 const navLinks = document.querySelector('.navbar ul')
-const links = document.querySelectorAll('.navbar li')
+const links = document.querySelectorAll('.navbar ul li')
 
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('open')
 })
+
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.toggle('open')
+  })
+})
+
+console.log(links)

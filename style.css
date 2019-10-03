@@ -342,7 +342,11 @@ footer {
 @media screen and (max-width: 600px) {
   /* Body */
   body {
-    width: 100vw;
+    width: 100vw !important;
+  }
+
+  h1 {
+    font-size: 32px !important;
   }
 
   /* Navbar */
@@ -392,8 +396,8 @@ footer {
   }
 
   .navbar ul.open {
-    clip-path: circle(1500px at 90% -10%);
-    -webkit-clip-path: circle(1500px at 90% -10%);
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
   }
 
