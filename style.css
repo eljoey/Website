@@ -341,8 +341,8 @@ footer {
 
 @media screen and (max-width: 600px) {
   /* Body */
-  h1 {
-    font-size: 1px;
+  body {
+    width: 100vw;
   }
 
   /* Navbar */
