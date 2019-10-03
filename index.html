@@ -12,15 +12,23 @@
     ></script>
   </head>
   <body>
+    <nav class="navbar">
+      <div class="mobileNav">
+        <div>Joe Hayden's Portfolio</div>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="./assets/resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <div class="container">
-      <nav class="navbar">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="./assets/resume.pdf" target="_blank">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
       <section id="home">
         <h1>Welcome</h1>
         <p>
@@ -312,7 +320,7 @@
             data-netlify="true"
           >
             <input
-              class="hidden"
+              class="hiddenBotForm"
               name="bot-field"
               placeholder="Don't fill this out if you're human"
             />
