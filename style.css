@@ -434,6 +434,9 @@ footer {
   }
 
   /* Projects */
+  #projects {
+    margin-bottom: 100px;
+  }
   .flip-card {
     background-color: transparent;
     width: 300px;
@@ -473,6 +476,13 @@ footer {
   }
 
   /* Contact Form */
+
+  .contactContainer {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
 
   #contact .contactContainer form .submit {
     width: auto;
