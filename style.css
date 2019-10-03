@@ -334,6 +334,7 @@ footer {
   .projectContainer {
     grid-template-columns: 1fr;
     grid-auto-rows: repeat(6, 1fr);
+    gap: 4rem;
   }
 }
 
@@ -379,7 +380,7 @@ footer {
     display: none;
   }
 
-  .flip-card:active .flip-card-inner:active {
+  .flip-card:active .flip-card-inner {
     transform: rotateY(180deg);
   }
 
