@@ -101,6 +101,7 @@ section h1 {
 
 section p {
   font-size: 1.5rem;
+  width: 90%;
 }
 
 section#home {
@@ -142,15 +143,6 @@ section#home {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: repeat(2, 1fr);
   gap: 2rem;
-}
-
-.calcProj,
-.weatherProj {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 300px;
-  height: 200px;
 }
 
 .flip-card {
@@ -216,6 +208,7 @@ section#home {
   background: orangered;
   border-radius: 15px;
   padding: 0 1rem;
+  margin-left: 5px;
   margin-right: 5px;
 }
 .projButtons a {
@@ -313,12 +306,14 @@ footer {
 /********** Media Queries **********/
 
 @media screen and (max-width: 1100px) {
+  /* Body */
   .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100vh auto 100vh;
   }
 
+  /* Projects */
   .projectContainer {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: repeat(3, 1fr);
@@ -339,6 +334,12 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  /* Body */
+  h1 {
+    font-size: 1px;
+  }
+
+  /* Navbar */
   .mobileNav {
     display: flex;
     z-index: 2;
@@ -380,9 +381,41 @@ footer {
     display: none;
   }
 
+  /* Projects */
+  .flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 250px;
+    perspective: 1000px;
+  }
+
+  .flip-card h2 {
+    font-size: 18px;
+  }
+
+  .flip-card p {
+    font-size: 12px;
+    width: 90%;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid black;
+  }
+
   .flip-card:active .flip-card-inner {
     transform: rotateY(180deg);
   }
+
+  .flip-card .flip-card-inner:active {
+    transform: rotateY(180deg);
+  }
+
+  /* Contact Form */
 
   #contact .contactContainer form .submit {
     width: auto;
