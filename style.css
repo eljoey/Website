@@ -409,31 +409,6 @@ footer {
     pointer-events: all;
   }
 
-  .navbar ul li {
-    opacity: 0;
-  }
-
-  .navbar ul li a {
-    font-size: 25px;
-  }
-
-  .navbar ul li:nth-child(1) {
-    transition: all 0.5s ease 0.2s;
-  }
-  .navbar ul li:nth-child(2) {
-    transition: all 0.5s ease 0.3s;
-  }
-  .navbar ul li:nth-child(3) {
-    transition: all 0.5s ease 0.4s;
-  }
-  .navbar ul li:nth-child(4) {
-    transition: all 0.5s ease 0.5s;
-  }
-
-  .navbar ul li.fade {
-    opacity: 1;
-  }
-
   /* Projects */
   #projects {
     margin-bottom: 100px;

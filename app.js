@@ -8,9 +8,6 @@ const links = document.querySelectorAll('.navbar ul li')
 
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('open')
-  links.forEach(link => {
-    link.classList.toggle('fade')
-  })
 })
 
 links.forEach(link => {
