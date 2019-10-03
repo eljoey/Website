@@ -411,7 +411,7 @@ footer {
     transform: rotateY(180deg);
   }
 
-  .flip-card .flip-card-inner:active {
+  .flip-card-inner:active .flip-card {
     transform: rotateY(180deg);
   }
 
