@@ -315,7 +315,7 @@ footer {
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh auto 100vh;
+    grid-template-rows: 100vh auto 100vh auto;
   }
 
   /* Projects */
