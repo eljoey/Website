@@ -251,6 +251,7 @@ section#home {
   height: 30px;
   padding: 5px 10px;
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
   color: #333;
   letter-spacing: 1px;
   background: #fff;
@@ -271,7 +272,6 @@ section#home {
 
 #contact .contactContainer form textarea {
   height: 150px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 #contact .contactContainer form .submit {
